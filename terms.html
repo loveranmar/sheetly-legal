@@ -60,6 +60,17 @@
     font-size: 13px;
     color: #8A745C;
   }
+  .heart {
+    display: inline-block;
+    animation: heartbeat 1.4s ease-in-out infinite;
+  }
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .heart { animation: none; }
+  }
 </style>
 </head>
 <body>
@@ -133,7 +144,7 @@
     <p>Questions about these Terms? Email us at: <a href="mailto:idk.techz.taken@gmail.com">idk.techz.taken@gmail.com</a></p>
 
     <div class="footer">
-      Made with 💛 by Idk Studio in Sweden 🇸🇪
+      Made with <span class="heart">❤️</span> by Idk Studio in Sweden 🇸🇪
     </div>
   </div>
 </body>
