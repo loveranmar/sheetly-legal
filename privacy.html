@@ -1,178 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy – Sheetly</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Sheetly</title>
+<link rel="canonical" href="https://www.trysheetly.com/privacy">
+<meta name="robots" content="noindex,follow">
 <style>
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    color: #3A2415;
-    background: linear-gradient(180deg, #F8F1E1 0%, #EBDDC3 100%);
-    margin: 0;
-    padding: 24px 16px 64px;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    background: #FCF6E6;
-    border: 3px solid #2A1A0C;
-    border-radius: 16px;
-    padding: 32px 28px;
-    box-shadow: 0 8px 0 #2A1A0C;
-  }
-  h1 {
-    color: #2A1A0C;
-    font-size: 28px;
-    margin: 0 0 4px;
-    text-align: center;
-  }
-  .subtitle {
-    text-align: center;
-    color: #8A745C;
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
-  h2 {
-    color: #2A1A0C;
-    font-size: 20px;
-    margin-top: 28px;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #EDD9A3;
-    padding-bottom: 4px;
-  }
-  h3 {
-    color: #2A1A0C;
-    font-size: 17px;
-    margin-top: 18px;
-    margin-bottom: 6px;
-  }
-  p, li { font-size: 15px; }
-  a { color: #A8761A; text-decoration: underline; }
-  ul { padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .footer {
-    text-align: center;
-    margin-top: 36px;
-    font-size: 13px;
-    color: #8A745C;
-  }
-  .heart {
-    display: inline-block;
-    animation: heartbeat 1.4s ease-in-out infinite;
-  }
-  @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    25% { transform: scale(1.2); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .heart { animation: none; }
-  }
+:root{--paper-top:#F8F1E1;--paper:#EFE3C8;--card:#FCF6E6;--ink:#3A2415;--ink-deep:#2A1A0C;
+--body:#7A6450;--muted:#8A745C;--gold:#C4952A;--gold-text:#A8761A;--line:rgba(74,46,28,.14)}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#F8F1E1,#EFE3C8 60%) no-repeat #EFE3C8;color:var(--body);
+font:16px/1.65 "DM Sans",system-ui,-apple-system,Segoe UI,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:40px 22px 72px}
+.moved{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+margin:0 0 32px;font-size:15px;color:var(--muted)}
+.moved a{color:var(--gold-text);font-weight:600}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--gold-text);font-weight:700;margin:0 0 10px}
+h1{font:800 clamp(30px,7vw,44px)/1.12 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink-deep);margin:0 0 12px}
+h1 em{font-style:italic;color:var(--gold-text)}
+.sub{font-size:17px;margin:0 0 16px;color:var(--body)}
+.chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:5px 12px;font-size:13px;color:var(--muted);margin:0 6px 8px 0}
+h2{font:800 22px/1.3 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink);margin:38px 0 10px;
+padding-top:22px;border-top:1px solid var(--line)}
+h3{font:700 17px/1.35 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink);margin:22px 0 6px}
+p,li{font-size:16px}
+a{color:var(--gold-text)}
+ul,ol{padding-left:20px}
+li{margin:6px 0}
+strong{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--ink);font-weight:700}
+.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:20px 0}
+.note-title{font-weight:700;color:var(--ink);margin-bottom:6px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer a{margin-right:14px}
 </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Sheetly</p>
+<div class="wrap">
 
-    <p><strong>Last updated:</strong> June 11, 2026</p>
+  <p class="moved">Sheetly's privacy policy now lives at
+    <a href="https://www.trysheetly.com/privacy">trysheetly.com/privacy</a>.
+    This page is a mirror kept in sync with it.</p>
 
-    <p>Thanks for using Sheetly! This privacy policy explains what information the app collects, how it's used, and your choices. Sheetly is published by <strong>Sheetly</strong> ("we", "us"). We've tried to keep this simple and clear.</p>
+  <span class="eyebrow">Privacy</span>
+  <h1>your music,<br><em>your business.</em></h1>
+  <p class="sub">What Sheetly collects, what it never collects, and how to make all of it disappear.</p>
+  <span class="chip">Last updated · August 18, 2026</span><span class="chip">No ads, no trackers</span>
 
-    <h2>Who this policy applies to</h2>
-    <p>This policy applies to anyone who uses the Sheetly app on iOS or Android. The app is intended for general audiences and is not specifically directed at children under 13.</p>
+  
 
-    <h2>Your account</h2>
-    <p>Sheetly uses an account so your scores follow you across devices. You can sign up with an email address and password, or with <strong>Sign in with Google</strong> or <strong>Sign in with Apple</strong>. When you create an account we store:</p>
-    <ul>
-      <li>Your email address</li>
-      <li>A profile (display name and an avatar picture, if you choose to add one)</li>
-      <li>Your plan (free or Sheetly Pro)</li>
-    </ul>
-    <p>If you sign in with Google or Apple, we only receive your email address (and, with Apple, you can use "Hide My Email"). We never see your Google or Apple password.</p>
+    
 
-    <h2>Your music &amp; practice data</h2>
-    <p>The core of Sheetly is turning photos of sheet music into playable digital scores. To make that work, the following is stored in your cloud library, linked to your account:</p>
-    <ul>
-      <li><strong>Scan photos</strong> — the pictures of sheet music you choose to scan are uploaded over an encrypted connection to our servers for conversion</li>
-      <li><strong>Your digital scores</strong> — the converted, playable versions of your scans, plus their titles and thumbnails</li>
-      <li><strong>Practice sessions</strong> — basic stats about your play sessions (which score, when, how long) so the app can show your progress</li>
-    </ul>
-    <p>Scan photos are used only to produce your score and to debug and improve the recognition quality. They are never used for advertising and never shared with data brokers.</p>
+    
+      <p class="doc-lede">Thanks for using Sheetly. This policy explains what information the app collects, how it's used, and the choices you have. Sheetly is published by <strong>Sheetly</strong> ("we", "us"), and we've tried to keep this as short and clear as a privacy policy can honestly be.</p>
 
-    <h3>How scans are processed</h3>
-    <p>When you scan a page, the image is sent to our processing servers (hosted on Google Cloud), where our music-recognition pipeline converts it into a digital score. Parts of this pipeline use AI models to analyze the structure and layout of the page. The output belongs to you and appears in your library.</p>
+      <div class="note">
+        <div class="note-title">In plain English</div>
+        <p>Your scans and scores are stored in your account so they follow you between devices. Your practice recordings never leave your phone. There are no ads, no tracking SDKs, and nothing is ever sold. Email us and we'll delete the lot.</p>
+      </div>
 
-    <h2>What stays on your device only</h2>
-    <p>The following is saved <strong>on your device only</strong> and is never uploaded:</p>
-    <ul>
-      <li><strong>Practice recordings</strong> — audio you record with the microphone is saved in the app's local storage on your phone. It never leaves your device.</li>
-      <li>Your app settings and preferences</li>
-      <li>Cached copies of your scores for offline use</li>
-    </ul>
-    <p>You can delete recordings inside the app, or clear all local data by deleting the app.</p>
+      <section id="applies">
+        <h2>Who this policy applies to</h2>
+        <p>This policy applies to anyone who uses the Sheetly app on iOS or Android. The app is intended for general audiences and is not specifically directed at children under 13.</p>
+      </section>
 
-    <h2>Camera &amp; microphone</h2>
-    <p>Sheetly only uses the camera when you actively scan sheet music, and only uses the microphone when you actively start a practice recording. Neither runs in the background, and you can revoke both permissions at any time in your phone's settings.</p>
+      <section id="account">
+        <h2>Your account</h2>
+        <p>Sheetly uses an account so your scores follow you across devices. You can sign up with an email address and password, or with <strong>Sign in with Google</strong> or <strong>Sign in with Apple</strong>. When you create an account we store:</p>
+        <ul>
+          <li>Your email address</li>
+          <li>A profile — display name and an avatar picture, if you choose to add one</li>
+          <li>Your plan (free or Sheetly Pro)</li>
+        </ul>
+        <p>If you sign in with Google or Apple, we only receive your email address — and with Apple you can use "Hide My Email". We never see your Google or Apple password.</p>
+      </section>
 
-    <h2>Usage analytics</h2>
-    <p>To understand which features are used and fix problems, the app records basic usage events (for example "scan started" or "score played") in our own database. Before you sign up, these events are tied only to a random device identifier; after you sign up they are linked to your account. We do not use third-party analytics or advertising SDKs, and this data is never sold or shared.</p>
+      <section id="music">
+        <h2>Your music &amp; practice data</h2>
+        <p>The core of Sheetly is turning photos of sheet music into playable digital scores. To make that work, the following is stored in your cloud library, linked to your account:</p>
+        <ul>
+          <li><strong>Scan photos</strong> — the pictures of sheet music you choose to scan are uploaded over an encrypted connection to our servers for conversion</li>
+          <li><strong>Your digital scores</strong> — the converted, playable versions of your scans, plus their titles and thumbnails</li>
+          <li><strong>Practice sessions</strong> — basic stats about your play sessions (which score, when, how long) so the app can show your progress</li>
+        </ul>
+        <p>Scan photos are used only to produce your score and to debug and improve recognition quality. They are never used for advertising and never shared with data brokers.</p>
 
-    <h2>Third-party services</h2>
-    <p>Sheetly relies on a small number of service providers to function:</p>
+        <h3>How scans are processed</h3>
+        <p>When you scan a page, the image is sent to our processing servers (hosted on Google Cloud), where our music-recognition pipeline converts it into a digital score. Parts of that pipeline use AI models to analyse the structure and layout of the page. The output belongs to you and appears in your library.</p>
+      </section>
 
-    <h3>Supabase (accounts &amp; database)</h3>
-    <p>Your account, scores, and practice data are stored with Supabase, our database and authentication provider. See the <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</p>
+      <section id="coach">
+        <h2>Ask Sheetly, the coach</h2>
+        <p>Ask Sheetly is the in-app coach that answers questions about the piece you're working on. When you send it a message, your question — together with the relevant details of the score you're asking about — is sent over an encrypted connection to our relay server and on to our AI model provider so an answer can be generated.</p>
+        <ul>
+          <li>Your chats are saved to your account so you can pick a conversation back up later</li>
+          <li>You can delete a conversation in the app at any time</li>
+          <li>Coach messages are never used for advertising, and never sold or shared with data brokers</li>
+        </ul>
+        <p>Please don't paste anything sensitive into the coach — it's a practice assistant, not a private notebook.</p>
+      </section>
 
-    <h3>Google Cloud (scan processing)</h3>
-    <p>Scan images are processed on servers hosted by Google Cloud. See the <a href="https://cloud.google.com/privacy" target="_blank" rel="noopener">Google Cloud Privacy Notice</a>.</p>
+      <section id="device">
+        <h2>What stays on your device</h2>
+        <p>The following is saved <strong>on your device only</strong> and is never uploaded:</p>
+        <ul>
+          <li><strong>Practice recordings</strong> — audio you record with the microphone is saved in the app's local storage on your phone. It never leaves your device.</li>
+          <li>Your app settings and preferences</li>
+          <li>Cached copies of your scores for offline use</li>
+        </ul>
+        <p>You can delete recordings inside the app, or clear all local data by deleting the app.</p>
+      </section>
 
-    <h3>Apple App Store &amp; Google Play (payments)</h3>
-    <p>Sheetly Pro purchases are processed entirely by Apple or Google — we never see your card details, billing address, or store account password. We are only told whether your account currently has Pro access. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      <section id="camera">
+        <h2>Camera &amp; microphone</h2>
+        <p>Sheetly only uses the camera when you actively scan sheet music, and only uses the microphone when you actively start a practice recording. Neither runs in the background, and you can revoke both permissions at any time in your phone's settings.</p>
+      </section>
 
-    <h2>What we do NOT collect</h2>
-    <p>To be crystal clear, Sheetly does <strong>not</strong>:</p>
-    <ul>
-      <li>Show ads or use any advertising or tracking SDKs</li>
-      <li>Sell or share your data with data brokers</li>
-      <li>Access your location or contacts</li>
-      <li>Access your photo library except for images you explicitly pick to scan</li>
-      <li>Record audio except when you explicitly start a recording</li>
-    </ul>
+      <section id="analytics">
+        <h2>Analytics &amp; feedback</h2>
+        <p>To understand which features get used and to fix problems, the app records basic usage events (for example "scan started" or "score played") in our own database. Before you sign up, these events are tied only to a random device identifier; after you sign up they are linked to your account. We do not use third-party analytics or advertising SDKs, and this data is never sold or shared.</p>
+        <p>If you send feedback from inside the app, we store your message along with your account so we can reply and act on it. If you'd rather not have it linked to you, just email us instead.</p>
+      </section>
 
-    <h2>Data retention &amp; deletion</h2>
-    <ul>
-      <li>You can delete individual scores from your library at any time — this removes them from our servers.</li>
-      <li>Practice recordings live only on your device; deleting them in the app (or deleting the app) removes them permanently.</li>
-      <li>To delete your entire account and all data linked to it, email us at <a href="mailto:ranmar.l@icloud.com">ranmar.l@icloud.com</a> from the address you signed up with, and we will erase it.</li>
-    </ul>
+      <section id="third-parties">
+        <h2>Third-party services</h2>
+        <p>Sheetly relies on a small number of service providers to function:</p>
 
-    <h2>Your rights under GDPR</h2>
-    <p>If you are in the European Economic Area (including Sweden), the United Kingdom, or another region with similar privacy laws, you have the right to:</p>
-    <ul>
-      <li>Ask for a copy of the information we hold about you</li>
-      <li>Ask for it to be corrected or deleted</li>
-      <li>Object to or restrict how we process it</li>
-      <li>Withdraw consent at any time (for example by revoking camera or microphone permissions, or deleting your account)</li>
-      <li>Lodge a complaint with your local data protection authority (in Sweden: <a href="https://www.imy.se" target="_blank" rel="noopener">Integritetsskyddsmyndigheten (IMY)</a>)</li>
-    </ul>
-    <p>To exercise any of these rights, email us at the address below and we'll help.</p>
+        <h3>Supabase — accounts &amp; database</h3>
+        <p>Your account, scores, and practice data are stored with Supabase, our database and authentication provider. See the <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</p>
 
-    <h2>Children's privacy</h2>
-    <p>The app is not directed at children under 13, and we do not knowingly collect any information from children. If you are a parent or guardian and believe your child has provided information to the app, please contact us and we will delete it.</p>
+        <h3>Google Cloud — scan processing &amp; AI</h3>
+        <p>Scan images are processed on servers hosted by Google Cloud, and the Ask Sheetly coach is powered by a Google Cloud AI model. See the <a href="https://cloud.google.com/privacy" target="_blank" rel="noopener">Google Cloud Privacy Notice</a>.</p>
 
-    <h2>Changes to this policy</h2>
-    <p>If this policy changes, the updated version will be posted at the same URL with a new "Last updated" date at the top. Significant changes will also be mentioned in the app's update notes.</p>
+        <h3>Apple App Store &amp; Google Play — payments</h3>
+        <p>Sheetly Pro purchases are processed entirely by Apple or Google — we never see your card details, billing address, or store account password. We are only told whether your account currently has Pro access. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      </section>
 
-    <h2>Contact</h2>
-    <p>Questions or concerns about privacy? Email us at: <a href="mailto:ranmar.l@icloud.com">ranmar.l@icloud.com</a></p>
+      <section id="never">
+        <h2>What we never collect</h2>
+        <p>To be crystal clear, Sheetly does <strong>not</strong>:</p>
+        <ul class="list-no">
+          <li>Show ads, or use any advertising or tracking SDKs</li>
+          <li>Sell or share your data with data brokers</li>
+          <li>Access your location or your contacts</li>
+          <li>Access your photo library, except for images you explicitly pick to scan</li>
+          <li>Record audio, except when you explicitly start a recording</li>
+        </ul>
+      </section>
 
-    <div class="footer">
-      Made with <span class="heart">❤️</span> by Sheetly
-    </div>
-  </div>
+      <section id="deletion">
+        <h2>Retention &amp; deletion</h2>
+        <p>You stay in control of everything you put into Sheetly:</p>
+        <ul>
+          <li>Delete individual scores from your library at any time — this removes them from our servers</li>
+          <li>Practice recordings live only on your device; deleting them in the app, or deleting the app, removes them permanently</li>
+          <li>To delete your entire account and everything linked to it, email <a href="mailto:hello@trysheetly.com">hello@trysheetly.com</a> from the address you signed up with and we'll erase it</li>
+        </ul>
+      </section>
+
+      <section id="gdpr">
+        <h2>Your rights under GDPR</h2>
+        <p>If you are in the European Economic Area (including Sweden), the United Kingdom, or another region with similar privacy laws, you have the right to:</p>
+        <ul class="list-yes">
+          <li>Ask for a copy of the information we hold about you</li>
+          <li>Ask for it to be corrected or deleted</li>
+          <li>Object to or restrict how we process it</li>
+          <li>Withdraw consent at any time — for example by revoking camera or microphone permissions, or deleting your account</li>
+          <li>Lodge a complaint with your local data protection authority (in Sweden: <a href="https://www.imy.se" target="_blank" rel="noopener">Integritetsskyddsmyndigheten, IMY</a>)</li>
+        </ul>
+        <p>To exercise any of these rights, email us at the address below and we'll help.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children's privacy</h2>
+        <p>The app is not directed at children under 13, and we do not knowingly collect any information from children. If you are a parent or guardian and believe your child has provided information to the app, please contact us and we will delete it.</p>
+      </section>
+
+      <section id="changes">
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, the updated version will be posted at the same URL with a new "Last updated" date at the top. Significant changes will also be mentioned in the app's update notes.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Questions or concerns about privacy? Email <a href="mailto:hello@trysheetly.com">hello@trysheetly.com</a> — a real person reads every message.</p>
+        <div class="doc-links">
+          <a class="doc-link-card" href="https://www.trysheetly.com/terms">
+            <span class="link-title">Terms of Use</span>
+            <span class="link-desc">The rules of the road, including subscriptions</span>
+          </a>
+          <a class="doc-link-card" href="https://www.trysheetly.com/support">
+            <span class="link-title">Support</span>
+            <span class="link-desc">Common questions, and how to reach us</span>
+          </a>
+        </div>
+      </section>
+
+  <footer>
+    <a href="https://www.trysheetly.com/privacy">Privacy</a>
+    <a href="https://www.trysheetly.com/terms">Terms</a>
+    <a href="https://www.trysheetly.com/support">Support</a>
+    <a href="https://www.trysheetly.com/">trysheetly.com</a>
+    <div style="margin-top:10px">&copy; 2026 Sheetly</div>
+  </footer>
+
+</div>
 </body>
 </html>

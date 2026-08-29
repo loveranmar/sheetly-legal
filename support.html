@@ -1,120 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Support – Sheetly</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support · Sheetly</title>
+<link rel="canonical" href="https://www.trysheetly.com/support">
+<meta name="robots" content="noindex,follow">
 <style>
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    color: #3A2415;
-    background: linear-gradient(180deg, #F8F1E1 0%, #EBDDC3 100%);
-    margin: 0;
-    padding: 24px 16px 64px;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    background: #FCF6E6;
-    border: 3px solid #2A1A0C;
-    border-radius: 16px;
-    padding: 32px 28px;
-    box-shadow: 0 8px 0 #2A1A0C;
-  }
-  h1 {
-    color: #2A1A0C;
-    font-size: 28px;
-    margin: 0 0 4px;
-    text-align: center;
-  }
-  .subtitle {
-    text-align: center;
-    color: #8A745C;
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
-  h2 {
-    color: #2A1A0C;
-    font-size: 20px;
-    margin-top: 28px;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #EDD9A3;
-    padding-bottom: 4px;
-  }
-  h3 {
-    color: #2A1A0C;
-    font-size: 16px;
-    margin-top: 18px;
-    margin-bottom: 4px;
-  }
-  p, li { font-size: 15px; }
-  a { color: #A8761A; text-decoration: underline; }
-  ul { padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .links {
-    text-align: center;
-    margin-top: 8px;
-  }
-  .links a { margin: 0 8px; }
-  .footer {
-    text-align: center;
-    margin-top: 36px;
-    font-size: 13px;
-    color: #8A745C;
-  }
-  .heart {
-    display: inline-block;
-    animation: heartbeat 1.4s ease-in-out infinite;
-  }
-  @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    25% { transform: scale(1.2); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .heart { animation: none; }
-  }
+:root{--paper-top:#F8F1E1;--paper:#EFE3C8;--card:#FCF6E6;--ink:#3A2415;--ink-deep:#2A1A0C;
+--body:#7A6450;--muted:#8A745C;--gold:#C4952A;--gold-text:#A8761A;--line:rgba(74,46,28,.14)}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#F8F1E1,#EFE3C8 60%) no-repeat #EFE3C8;color:var(--body);
+font:16px/1.65 "DM Sans",system-ui,-apple-system,Segoe UI,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:40px 22px 72px}
+.moved{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+margin:0 0 32px;font-size:15px;color:var(--muted)}
+.moved a{color:var(--gold-text);font-weight:600}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--gold-text);font-weight:700;margin:0 0 10px}
+h1{font:800 clamp(30px,7vw,44px)/1.12 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink-deep);margin:0 0 12px}
+h1 em{font-style:italic;color:var(--gold-text)}
+.sub{font-size:17px;margin:0 0 16px;color:var(--body)}
+.chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:5px 12px;font-size:13px;color:var(--muted);margin:0 6px 8px 0}
+h2{font:800 22px/1.3 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink);margin:38px 0 10px;
+padding-top:22px;border-top:1px solid var(--line)}
+h3{font:700 17px/1.35 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink);margin:22px 0 6px}
+p,li{font-size:16px}
+a{color:var(--gold-text)}
+ul,ol{padding-left:20px}
+li{margin:6px 0}
+strong{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--ink);font-weight:700}
+.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:20px 0}
+.note-title{font-weight:700;color:var(--ink);margin-bottom:6px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer a{margin-right:14px}
 </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Support</h1>
-    <p class="subtitle">Sheetly</p>
+<div class="wrap">
 
-    <p>Thanks for using Sheetly! If you're stuck, found a bug, or just want to say hi, I'd love to hear from you.</p>
+  <p class="moved">Sheetly's support now lives at
+    <a href="https://www.trysheetly.com/support">trysheetly.com/support</a>.
+    This page is a mirror kept in sync with it.</p>
 
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ranmar.l@icloud.com">ranmar.l@icloud.com</a></p>
-    <p>I'm a solo indie developer, so reply times can vary, but I read every email.</p>
+  <span class="eyebrow">Support</span>
+  <h1>stuck on something?<br><em>we'll get you playing.</em></h1>
+  <p class="sub">Scanning tips, billing answers, and a real person on the other end of the email.</p>
+  <span class="chip">Answered by a human</span><span class="chip">Usually within a day or two</span>
 
-    <h2>Common questions</h2>
+  
 
-    <h3>My scan didn't convert well.</h3>
-    <p>Recognition works best with a clear, well-lit photo: lay the page flat, fill the frame with one page at a time, and avoid shadows and glare. Printed scores convert much better than handwritten ones. If a scan keeps failing, email me the photo and I'll take a look.</p>
+    
 
-    <h3>I bought Sheetly Pro but it isn't showing up.</h3>
-    <p>Try tapping <em>Restore Purchases</em> in the app's settings. If that doesn't work, sign out and back in to your account and try again, or email me with your purchase receipt.</p>
+    
+      <p class="doc-lede">Thanks for using Sheetly. If you're stuck, found a bug, or just want to say hi, we'd love to hear from you — the answers below cover the questions that come up most.</p>
 
-    <h3>How do I cancel my subscription?</h3>
-    <p>Open iOS Settings → tap your name at the top → Subscriptions → Sheetly Pro → Cancel. Cancelling stops the next renewal but you keep Pro until the current period ends. The Lifetime unlock is a one-time purchase — there's nothing to cancel.</p>
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <div class="contact-card">
+          <img src="https://www.trysheetly.com/assets/scan-listen.webp" alt="The Sheetly mascot wearing headphones" width="180" height="190">
+          <div class="contact-copy">
+            <div class="contact-title">Email us anything</div>
+            <p>Sheetly is made by a tiny indie team, so reply times can vary — but every email is read, and a scan that won't convert is genuinely useful to us. Attach the photo and we'll take a look.</p>
+            <a class="btn btn-gold btn-lg btn-email" href="mailto:hello@trysheetly.com">hello@trysheetly.com</a>
+          </div>
+        </div>
+        <div class="glance-grid">
+          <div class="glance">
+            <div class="glance-key">Reporting a bug?</div>
+            <p>Tell us your iPhone model, the iOS version, and what you were doing right before it happened.</p>
+          </div>
+          <div class="glance">
+            <div class="glance-key">Scan came out wrong?</div>
+            <p>Send the original photo. It goes straight into the pile we use to make recognition better.</p>
+          </div>
+          <div class="glance">
+            <div class="glance-key">Billing problem?</div>
+            <p>Include the email you signed up with and your App Store receipt, and we'll sort it out.</p>
+          </div>
+        </div>
+      </section>
 
-    <h3>Where are my practice recordings stored?</h3>
-    <p>Practice recordings are saved <strong>only on your device</strong> — they are never uploaded. That also means deleting the app deletes your recordings, so export anything you want to keep first. Your scores, on the other hand, are safely synced to your account.</p>
+      <section id="scanning">
+        <h2>Scanning</h2>
+        <div class="faq">
+          <details>
+            <summary>My scan didn't convert well</summary>
+            <div class="faq-answer">
+              <p>Recognition works best with a clear, well-lit photo: lay the page flat, fill the frame with one page at a time, and avoid shadows and glare. Printed scores convert far better than handwritten ones.</p>
+              <p>If a page keeps failing, email us the photo — we'll look at it, and it helps us improve the recogniser for everyone.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What kind of sheet music works best?</summary>
+            <div class="faq-answer">
+              <p>Clean printed notation — single or grand staff, standard notation, one page per photo. Very dense orchestral scores, handwritten manuscripts, tablature, and heavily annotated pages are the hardest cases and may need corrections.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can I scan a book without flattening it?</summary>
+            <div class="faq-answer">
+              <p>You can, but curved pages bend the staff lines and that's where most mistakes come from. Pressing the spine flat, or photographing one page at a time straight on, makes a visible difference.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is it legal to scan my sheet music?</summary>
+            <div class="faq-answer">
+              <p>Scan music you composed, public-domain works, or copies you're licensed to reproduce for your own practice. Please don't upload copies you don't have the right to use — see the <a href="https://www.trysheetly.com/terms#content">Terms</a> for the full wording.</p>
+            </div>
+          </details>
+        </div>
+      </section>
 
-    <h3>How do I delete my account and data?</h3>
-    <p>Email me at <a href="mailto:ranmar.l@icloud.com">ranmar.l@icloud.com</a> from the address you signed up with and I'll erase your account and everything linked to it. See the <a href="privacy.html">Privacy Policy</a> for details on what is stored.</p>
+      <section id="practice">
+        <h2>Playing &amp; practice</h2>
+        <div class="faq">
+          <details>
+            <summary>How do I loop a tricky passage?</summary>
+            <div class="faq-answer">
+              <p>Open the score, turn on loop in the player controls, and set the start and end bars. Then drop the tempo, get it clean, and walk it back up — the playhead follows along the whole time.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Where are my practice recordings stored?</summary>
+            <div class="faq-answer">
+              <p>Practice recordings are saved <strong>only on your device</strong> — they're never uploaded. That also means deleting the app deletes your recordings, so export anything you want to keep first. Your scores, on the other hand, are safely synced to your account.</p>
+            </div>
+          </details>
+          <details>
+            <summary>I press play but hear nothing</summary>
+            <div class="faq-answer">
+              <p>Check the iPhone's silent switch and the volume while the app is in the foreground. If it's still silent, close and reopen the app — that rebuilds the audio engine — and make sure Sheetly isn't muted in iOS Settings → Sound. If it keeps happening, email us; audio bugs are worth chasing.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Does Sheetly work offline?</summary>
+            <div class="faq-answer">
+              <p>Scores you've already opened are cached, so you can play and practise them without a connection. Scanning a new page and asking the coach both need the internet, since the work happens on our servers.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is there an Android version?</summary>
+            <div class="faq-answer">
+              <p>Not yet — Sheetly is on iPhone today, and Android is on the way.</p>
+            </div>
+          </details>
+        </div>
+      </section>
 
-    <h2>Privacy and Terms</h2>
-    <p class="links">
-      <a href="privacy.html"><strong>Privacy Policy</strong></a> ·
-      <a href="terms.html"><strong>Terms of Use</strong></a>
-    </p>
+      <section id="billing">
+        <h2>Pro &amp; billing</h2>
+        <div class="faq">
+          <details>
+            <summary>What's included for free?</summary>
+            <div class="faq-answer">
+              <p>You can view, play, and record along with the scores that come with the app, so you can try the whole practice loop before paying. Scanning your own sheet music, importing files, the Ask Sheetly coach, and exports are Sheetly Pro features.</p>
+            </div>
+          </details>
+          <details>
+            <summary>I bought Sheetly Pro but it isn't showing up</summary>
+            <div class="faq-answer">
+              <p>Tap <em>Restore Purchases</em> in the app's settings. If that doesn't do it, sign out and back in to your account and try again — and if it's still missing, email us with your purchase receipt and we'll fix it manually.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do I cancel my subscription?</summary>
+            <div class="faq-answer">
+              <p>Open iOS Settings → tap your name at the top → Subscriptions → Sheetly Pro → Cancel. Cancelling stops the next renewal, and you keep Pro until the current period ends.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <div class="faq-answer">
+              <p>Purchases are handled entirely by Apple, so refunds go through them: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. If something in the app is what went wrong, tell us too — we'd like the chance to fix it.</p>
+            </div>
+          </details>
+        </div>
+      </section>
 
-    <div class="footer">
-      Made with <span class="heart">❤️</span> by Sheetly
-    </div>
-  </div>
+      <section id="account">
+        <h2>Account &amp; data</h2>
+        <div class="faq">
+          <details>
+            <summary>How do I delete my account and data?</summary>
+            <div class="faq-answer">
+              <p>Email <a href="mailto:hello@trysheetly.com">hello@trysheetly.com</a> from the address you signed up with and we'll erase your account and everything linked to it. The <a href="https://www.trysheetly.com/privacy">Privacy Policy</a> spells out exactly what's stored.</p>
+            </div>
+          </details>
+          <details>
+            <summary>I can't sign in</summary>
+            <div class="faq-answer">
+              <p>If you first signed up with Google or Apple, use that same button rather than a password — a different method makes a different account. Otherwise use the password reset on the sign-in screen, and if the email doesn't arrive, check spam and then write to us.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Will my scores follow me to a new phone?</summary>
+            <div class="faq-answer">
+              <p>Yes — your library lives in your account, so signing in on a new device brings your scores with it. Practice recordings don't travel: they're stored on the phone that made them.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="legal">
+        <h2>Privacy &amp; terms</h2>
+        <div class="doc-links">
+          <a class="doc-link-card" href="https://www.trysheetly.com/privacy">
+            <span class="link-title">Privacy Policy</span>
+            <span class="link-desc">What we store, and what never leaves your phone</span>
+          </a>
+          <a class="doc-link-card" href="https://www.trysheetly.com/terms">
+            <span class="link-title">Terms of Use</span>
+            <span class="link-desc">Accounts, copyright, subscriptions, refunds</span>
+          </a>
+        </div>
+      </section>
+
+  <footer>
+    <a href="https://www.trysheetly.com/privacy">Privacy</a>
+    <a href="https://www.trysheetly.com/terms">Terms</a>
+    <a href="https://www.trysheetly.com/support">Support</a>
+    <a href="https://www.trysheetly.com/">trysheetly.com</a>
+    <div style="margin-top:10px">&copy; 2026 Sheetly</div>
+  </footer>
+
+</div>
 </body>
 </html>

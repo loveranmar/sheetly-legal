@@ -1,160 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sheetly – Scan Sheet Music, Hear It Come Alive</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sheetly · Legal</title>
+<link rel="canonical" href="https://www.trysheetly.com/">
+<meta name="robots" content="noindex,follow">
 <style>
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    color: #3A2415;
-    background: linear-gradient(180deg, #F8F1E1 0%, #EBDDC3 100%);
-    margin: 0;
-    padding: 24px 16px 64px;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    background: #FCF6E6;
-    border: 3px solid #2A1A0C;
-    border-radius: 16px;
-    padding: 32px 28px;
-    box-shadow: 0 8px 0 #2A1A0C;
-  }
-  h1 {
-    color: #2A1A0C;
-    font-size: 32px;
-    margin: 0 0 4px;
-    text-align: center;
-  }
-  .subtitle {
-    text-align: center;
-    color: #8A745C;
-    font-size: 15px;
-    margin-bottom: 28px;
-  }
-  .intro {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  .cta {
-    display: block;
-    text-align: center;
-    margin: 28px 0;
-  }
-  .cta a {
-    display: inline-block;
-    background: linear-gradient(180deg, #5C3B22 0%, #3C2414 100%);
-    color: #F6ECD6;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 16px;
-    border: 3px solid #2A1A0C;
-    box-shadow: 0 4px 0 #2A1A0C;
-  }
-  .cta a:hover {
-    transform: translateY(2px);
-    box-shadow: 0 2px 0 #2A1A0C;
-  }
-  h2 {
-    color: #2A1A0C;
-    font-size: 20px;
-    margin-top: 28px;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #EDD9A3;
-    padding-bottom: 4px;
-  }
-  p, li { font-size: 15px; }
-  a { color: #A8761A; text-decoration: underline; }
-  .links {
-    list-style: none;
-    padding: 0;
-  }
-  .links li {
-    margin-bottom: 14px;
-    background: #F6ECD6;
-    border: 2px solid #2A1A0C;
-    border-radius: 10px;
-  }
-  .links li:hover {
-    background: #F2E5C9;
-  }
-  .links li a {
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #2A1A0C;
-  }
-  .links li .desc {
-    display: block;
-    font-weight: normal;
-    color: #8A745C;
-    font-size: 13px;
-    margin-top: 2px;
-  }
-  .footer {
-    text-align: center;
-    margin-top: 36px;
-    font-size: 13px;
-    color: #8A745C;
-  }
-  .heart {
-    display: inline-block;
-    animation: heartbeat 1.4s ease-in-out infinite;
-  }
-  @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    25% { transform: scale(1.2); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .heart { animation: none; }
-  }
+:root{--paper-top:#F8F1E1;--paper:#EFE3C8;--card:#FCF6E6;--ink:#3A2415;--ink-deep:#2A1A0C;
+--body:#7A6450;--muted:#8A745C;--gold:#C4952A;--gold-text:#A8761A;--line:rgba(74,46,28,.14)}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#F8F1E1,#EFE3C8 60%) no-repeat #EFE3C8;color:var(--body);
+font:16px/1.65 "DM Sans",system-ui,-apple-system,Segoe UI,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:40px 22px 72px}
+.moved{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+margin:0 0 32px;font-size:15px;color:var(--muted)}
+.moved a{color:var(--gold-text);font-weight:600}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--gold-text);font-weight:700;margin:0 0 10px}
+h1{font:800 clamp(30px,7vw,44px)/1.12 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink-deep);margin:0 0 12px}
+h1 em{font-style:italic;color:var(--gold-text)}
+.sub{font-size:17px;margin:0 0 16px;color:var(--body)}
+.chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:5px 12px;font-size:13px;color:var(--muted);margin:0 6px 8px 0}
+h2{font:800 22px/1.3 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink);margin:38px 0 10px;
+padding-top:22px;border-top:1px solid var(--line)}
+h3{font:700 17px/1.35 "Nunito",ui-rounded,system-ui,sans-serif;color:var(--ink);margin:22px 0 6px}
+p,li{font-size:16px}
+a{color:var(--gold-text)}
+ul,ol{padding-left:20px}
+li{margin:6px 0}
+strong{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--ink);font-weight:700}
+.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:20px 0}
+.note-title{font-weight:700;color:var(--ink);margin-bottom:6px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer a{margin-right:14px}
 </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Sheetly</h1>
-    <p class="subtitle">Scan sheet music. Hear it come alive.</p>
+<div class="wrap">
 
-    <p class="intro">Snap a photo of any sheet music and Sheetly turns it into a living, playable score — follow along with the playhead, slow it down, loop tricky bars, and record your practice takes.</p>
+  <p class="moved">Sheetly now lives at
+    <a href="https://www.trysheetly.com/">trysheetly.com</a>.
+    These pages are mirrors kept in sync with it.</p>
 
-    <!-- TODO: replace with the real App Store link once Sheetly is live -->
-    <div class="cta">
-      <a href="https://apps.apple.com/">Download on the App Store</a>
-    </div>
+  <span class="eyebrow">Legal</span>
+  <h1>the <em>fine print.</em></h1>
+  <p class="sub">Sheetly's policies, in plain language.</p>
 
-    <h2>Quick links</h2>
-    <ul class="links">
-      <li>
-        <a href="support.html">Support
-          <span class="desc">Get help, report bugs, or say hi</span>
-        </a>
-      </li>
-      <li>
-        <a href="privacy.html">Privacy Policy
-          <span class="desc">What data the app collects (and what it doesn't)</span>
-        </a>
-      </li>
-      <li>
-        <a href="terms.html">Terms of Use
-          <span class="desc">The legal stuff</span>
-        </a>
-      </li>
-    </ul>
+  <h2>Documents</h2>
+  <ul>
+    <li><a href="https://www.trysheetly.com/privacy">Privacy Policy</a> — what Sheetly collects,
+        what it never collects, and how to delete all of it
+        (<a href="privacy.html">mirror</a>)</li>
+    <li><a href="https://www.trysheetly.com/terms">Terms of Use</a> — the agreement covering the app
+        and Sheetly Pro (<a href="terms.html">mirror</a>)</li>
+    <li><a href="https://www.trysheetly.com/support">Support</a> — how to get help
+        (<a href="support.html">mirror</a>)</li>
+  </ul>
 
-    <h2>Contact</h2>
-    <p>Questions, feedback, or just want to say hi? Email <a href="mailto:ranmar.l@icloud.com">ranmar.l@icloud.com</a></p>
+  <footer>
+    <a href="https://www.trysheetly.com/privacy">Privacy</a>
+    <a href="https://www.trysheetly.com/terms">Terms</a>
+    <a href="https://www.trysheetly.com/support">Support</a>
+    <a href="https://www.trysheetly.com/">trysheetly.com</a>
+    <div style="margin-top:10px">&copy; 2026 Sheetly</div>
+  </footer>
 
-    <div class="footer">
-      Made with <span class="heart">❤️</span> by Sheetly
-    </div>
-  </div>
+</div>
 </body>
 </html>
