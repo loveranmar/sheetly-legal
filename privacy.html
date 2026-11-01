@@ -50,18 +50,13 @@ footer a{margin-right:14px}
   <span class="eyebrow">Privacy</span>
   <h1>your music,<br><em>your business.</em></h1>
   <p class="sub">What Sheetly collects, what it never collects, and how to make all of it disappear.</p>
-  <span class="chip">Last updated · October 20, 2026</span><span class="chip">No ads, no trackers</span>
+  <span class="chip">Last updated · November 1, 2026</span><span class="chip">No ads, no trackers</span>
 
-  
-
-    
-
-    
       <p class="doc-lede">Thanks for using Sheetly. This policy explains what information the app collects, how it's used, and the choices you have. Sheetly is published by <strong>Sheetly</strong> ("we", "us"), and we've tried to keep this as short and clear as a privacy policy can honestly be.</p>
 
       <div class="note">
         <div class="note-title">In plain English</div>
-        <p>Your scans and scores are stored in your account so they follow you between devices. Your practice recordings never leave your phone. There are no ads, no tracking SDKs, and nothing is ever sold. Email us and we'll delete the lot.</p>
+        <p>Your scans and scores are stored in your account so they follow you between devices. Your practice recordings never leave your phone. We keep scan photos for up to a year so we can fix scans that go wrong. There are no ads, no tracking SDKs, and nothing is ever sold. Email us and we'll delete the lot, scan photos included.</p>
       </div>
 
       <section id="applies">
@@ -88,10 +83,22 @@ footer a{margin-right:14px}
           <li><strong>Your digital scores.</strong> The converted, playable versions of your scans, plus their titles and thumbnails</li>
           <li><strong>Practice sessions.</strong> Basic stats about your play sessions (which score, when, how long) so the app can show your progress</li>
         </ul>
-        <p>Scan photos are used only to produce your score and to debug and improve recognition quality. They are never used for advertising and never shared with data brokers.</p>
+        <p>We keep each scan photo for up to 12 months, so that when a scan goes wrong we can see what was photographed and fix it. Scan photos are used only to make your score and to test and improve the scanner, as described under <a href="https://www.trysheetly.com/privacy#improving">Improving the scanner</a>. They are never used for advertising, never sold, and never shared with data brokers.</p>
 
         <h3>How scans are processed</h3>
         <p>When you scan a page, the image is sent to our processing servers (hosted on Google Cloud), where our music-recognition pipeline converts it into a digital score. Parts of that pipeline use AI models to analyse the structure and layout of the page. The output belongs to you and appears in your library.</p>
+      </section>
+
+      <section id="improving">
+        <h2>Improving the scanner</h2>
+        <p>When a scan comes out wrong, the only way to fix it is to look at the photo. This is what we do with scan photos, mostly ones from scans that were rated 1 to 3 stars:</p>
+        <ul>
+          <li><strong>Looking at scans that went wrong.</strong> Sheetly's founder looks at kept photos next to what Sheetly made of them, in a private, password-protected dashboard.</li>
+          <li><strong>A test set.</strong> Photos of scans that went wrong, and your other tries at the same page, may be copied into a private test set. We write out the correct notes for each one and check every new version of the scanner against them. Test-set photos are kept for at most 2 years and are never published.</li>
+          <li><strong>AI helps us do this.</strong> Claude, an AI model made by Anthropic, looks at test-set photos to help us write out the correct notes and find the bug. Anthropic does not use them to train its models, and deletes them within 30 days.</li>
+          <li><strong>Training our music reader.</strong> Test-set photos may also be used to train Sheetly's own music-recognition model on Kaggle, a Google service, in a private dataset that only we can open. They go there cut down to the music, without account details, file names or location data, and we delete the dataset after training. The trained model only outputs notes. It keeps no copy of your photo and can't reproduce it.</li>
+        </ul>
+        <p>We do this because a better scanner helps everyone who uses Sheetly, you included. Under GDPR that is our legitimate interest (article 6(1)(f)). You can object at any time: email us and within 30 days we take your photos out of the test set and the training data and stop using them. A model that has already been trained can't unlearn a photo, but it holds no copy of it.</p>
       </section>
 
       <section id="coach">
@@ -124,7 +131,7 @@ footer a{margin-right:14px}
       <section id="analytics">
         <h2>Analytics &amp; feedback</h2>
         <p>To understand which features get used and to fix problems, the app records basic usage events (for example "scan started" or "score played") in our own database. Before you sign up, these events are tied only to a random device identifier; after you sign up they are linked to your account. The app contains no third-party analytics or advertising SDKs, and this data is never sold or shared.</p>
-<p>Near the end of the first questions, the app asks who sent you to Sheetly. This is optional. If you pick a channel and type a name, for example a teacher or a creator, we store your answer with your account so we can credit and pay the person who recommended us. They only ever see how many people named them, never who you are.</p>
+        <p>Near the end of the first questions, the app asks who sent you to Sheetly. This is optional. If you pick a channel and type a name, for example a teacher or a creator, we store your answer with your account so we can credit and pay the person who recommended us. They only ever see how many people named them, never who you are.</p>
         <p>This website counts visits with Vercel Web Analytics. It sets no cookies and keeps no identifier for you: it records the page, the site that linked you here, and your country, browser and device type, so we can see which pages are useful. App Store links on this site carry a campaign tag, so Apple can tell us how many installs came from the site, never who installed.</p>
         <p>If you send feedback from inside the app, we store your message along with your account so we can reply and act on it. If you'd rather not have it linked to you, just email us instead.</p>
       </section>
@@ -142,8 +149,25 @@ footer a{margin-right:14px}
         <h3>OpenRouter: the question box on this website and the "who sent you" answer</h3>
         <p>Questions typed into the "Ask your own question" box on the FAQ page are answered by an AI model reached through OpenRouter. Only the question itself is sent, with no account, device or IP details, and we do not keep it. OpenRouter and the model provider handle it under their own terms, so please leave personal details out. If you type a name in the app's "who sent you here?" question, that name and the channel you picked are sent through OpenRouter to an AI model that matches it to our list of partners. No account or device details are sent with it. See the <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter Privacy Policy</a>.</p>
 
+        <h3>Anthropic: help fixing the scanner</h3>
+        <p>Photos in our test set are shown to Claude, an AI model made by Anthropic, to help us write out the correct notes and find scanner bugs (see <a href="https://www.trysheetly.com/privacy#improving">Improving the scanner</a>). Anthropic does not use them to train its models and deletes them within 30 days. See the <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a>.</p>
+        <h3>Kaggle (Google): training our music reader</h3>
+        <p>Test-set photos, cut down to the music and without account details, file names or location data, may go into a private Kaggle dataset to train Sheetly's music-recognition model. We delete the dataset after training. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <h3>Vercel: this website and our private dashboard</h3>
+        <p>This website runs on Vercel, and so does the password-protected dashboard where we look at scans that went wrong. Scan photos pass through it only to be shown to us. See the <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel Privacy Policy</a>.</p>
+        <h3>RevenueCat: subscription status</h3>
+        <p>RevenueCat tells the app whether you have Sheetly Pro. It receives an app user ID and your purchase history from Apple or Google, never your card details. See the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+        <h3>Resend: email</h3>
+        <p>Sign-in codes and account emails, such as a trial reminder, are sent through Resend, which receives your email address and the message. See the <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Resend Privacy Policy</a>.</p>
+        <h3>Discord: feedback alerts</h3>
+        <p>When you send feedback in the app, its text is also posted to a private Discord channel so we see it quickly. See the <a href="https://discord.com/privacy" target="_blank" rel="noopener">Discord Privacy Policy</a>.</p>
         <h3>Apple App Store &amp; Google Play: payments</h3>
         <p>Sheetly Pro purchases are processed entirely by Apple or Google. We never see your card details, billing address, or store account password. We are only told whether your account currently has Pro access. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      </section>
+
+      <section id="storage">
+        <h2>Where your data is stored</h2>
+        <p>Your scan photos are stored with Google Cloud in Belgium, and your account and scores with Supabase in Sweden. Some of the providers above (Anthropic, Kaggle, Vercel, RevenueCat, Resend, OpenRouter and Discord) are based in the United States. When your data goes there, it is protected by the provider's transfer safeguards, such as the EU–US Data Privacy Framework or the European Commission's standard contractual clauses.</p>
       </section>
 
       <section id="never">
@@ -162,9 +186,10 @@ footer a{margin-right:14px}
         <h2>Retention &amp; deletion</h2>
         <p>You stay in control of everything you put into Sheetly:</p>
         <ul>
-          <li>Delete individual scores from your library at any time, which removes them from our servers</li>
+          <li>Scan photos are kept for up to 12 months, then deleted automatically. Photos in our test set are kept for at most 2 years</li>
+          <li>Delete a score in the app and it is removed from your library and our database. Its scan photo is deleted automatically within 12 months, or right away if you email us</li>
           <li>Practice recordings live only on your device; deleting them in the app, or deleting the app, removes them permanently</li>
-          <li>To delete your entire account and everything linked to it, email <a href="mailto:hello@trysheetly.com">hello@trysheetly.com</a> from the address you signed up with and we'll erase it</li>
+          <li>Delete your account in the app's Settings, or email <a href="mailto:hello@trysheetly.com">hello@trysheetly.com</a> from the address you signed up with. Deleting in the app erases your account and scores at once. Email us too if you want your scan photos gone right away; otherwise they are deleted automatically within 12 months. When you email us, we erase everything within 30 days, scan photos and test-set copies included. Feedback you sent is kept without your name or account</li>
         </ul>
       </section>
 
@@ -178,6 +203,8 @@ footer a{margin-right:14px}
           <li>Withdraw consent at any time, for example by revoking camera or microphone permissions, or deleting your account</li>
           <li>Lodge a complaint with your local data protection authority (in Sweden: <a href="https://www.imy.se" target="_blank" rel="noopener">Integritetsskyddsmyndigheten, IMY</a>)</li>
         </ul>
+        <p><strong>Why we're allowed to use your data.</strong> To give you the service you signed up for (GDPR article 6(1)(b)); and to keep Sheetly working and secure, understand which features get used, and find and fix scans that went wrong, which is our legitimate interest (article 6(1)(f)). Where we ask for permission, such as for the camera or microphone, we rely on that permission.</p>
+        <p><strong>Your right to object.</strong> You can object at any time to us using your data for our legitimate interests, including looking at your scan photos to improve the scanner. Email us and we'll stop.</p>
         <p>To exercise any of these rights, email us at the address below and we'll help.</p>
       </section>
 
@@ -188,7 +215,7 @@ footer a{margin-right:14px}
 
       <section id="changes">
         <h2>Changes to this policy</h2>
-        <p>If this policy changes, the updated version will be posted at the same URL with a new "Last updated" date at the top. Significant changes will also be mentioned in the app's update notes.</p>
+        <p>If this policy changes, the updated version will be posted at the same URL with a new "Last updated" date at the top. When a change affects how we use your data, we'll say what changed at the top of this page.</p>
       </section>
 
       <section id="contact">
