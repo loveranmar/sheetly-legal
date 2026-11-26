@@ -146,17 +146,17 @@ footer a{margin-right:14px}
 
       <section id="security">
         <h2>Account security &amp; devices</h2>
-        <p>A Sheetly account is for one person, used on their own devices. To protect your account and stop it from being shared, we keep a short record of each device that signs in to it:</p>
+        <p>A Sheetly account is for one person, used on their own devices. To protect your account and stop it from being shared, we keep a short record of each device that signs in to it. The app sends it when it starts and about every 6 hours after that (every couple of minutes while it waits for a confirmation code):</p>
         <ul>
-          <li><strong>A device ID.</strong> A random identifier the app creates for that device</li>
+          <li><strong>A device ID.</strong> A random identifier the app creates for that device. It is not your phone's advertising identifier</li>
           <li><strong>The device and app.</strong> The device model (for example "iPhone 15"), the app version, and the app's language, so a confirmation email reaches you in your language</li>
-          <li><strong>A rough country.</strong> Our server works out the country from the internet address the app connects from. Only the country is kept in the device record, never the address itself, and we never use GPS or ask for your location</li>
+          <li><strong>A rough country.</strong> Our own server works out the country from the internet address the app connects from, using a country list kept inside our systems (<a href="https://db-ip.com" target="_blank" rel="noopener">IP Geolocation by DB-IP</a>), so the address is never sent to anyone else. Only the country is kept, never the address itself, and we never use GPS or ask for your location</li>
           <li><strong>Your App Store country and time zone,</strong> as your phone reports them</li>
           <li><strong>When the device was first and last seen,</strong> and on which days it was used in which country</li>
         </ul>
-        <p>We use this only to keep your account safe and in your hands: to notice when a new device in another country signs in, or when your account is in use in two countries on the same day, and then email you a short code so you can confirm it was you. You decide. If it wasn't you, one tap on "That wasn't me" in that email signs the device out, and if you sign in with a password, we send you a link to choose a new one. We also use it to limit how many devices can use one account at the same time, as the <a href="https://www.trysheetly.com/terms#account">Terms of Use</a> describe. Your own library, your scores and your recordings always stay yours.</p>
+        <p>We use this only to keep your account safe and in your hands: to notice when a new device in another country signs in, or when your account is in use in two countries on the same day, and then email you a short code so you can confirm it was you. You decide. If it wasn't you, one tap on "That wasn't me" in that email opens a page on our website that signs the device out, and if you sign in with a password, we send you a link to choose a new one. We also use it to limit how many devices can use one account at the same time (three today), as the <a href="https://www.trysheetly.com/terms#account">Terms of Use</a> describe. Your own library, your scores and your recordings always stay yours.</p>
         <p>These checks run automatically. If one ever gets in your way, for example when you travel, email us and a person will look at it.</p>
-        <p>Device records are deleted 90 days after a device was last seen. They are never used for advertising and never sold. The confirmation email is sent through Resend, and if one account trips this check again and again on the same day, a short alert with that account's email address, its countries and the device model is posted to our private Discord channel so we can look into it. Under GDPR this is our legitimate interest in keeping accounts secure and preventing fraud (article 6(1)(f)), and part of providing the service on the terms you signed up for (article 6(1)(b)).</p>
+        <p>Device records are deleted 90 days after a device was last seen, and at once when you delete your account. They are never used for advertising and never sold. They are stored with Supabase and the confirmation email is sent through Resend. If one account trips this check more than three times on the same day, a short alert with that account's email address, its countries and the device model is posted to our private Discord channel so we can look into it. Under GDPR this is our legitimate interest in keeping accounts secure and preventing fraud (article 6(1)(f)), and part of providing the service on the terms you signed up for (article 6(1)(b)).</p>
       </section>
 
       <section id="third-parties">
@@ -218,7 +218,7 @@ footer a{margin-right:14px}
           <li>Scan photos are kept for up to 12 months, then deleted automatically. Photos in our test set are kept for at most 2 years</li>
           <li>Delete a score in the app and it is removed from your library and our database. Its scan photo is deleted automatically within 12 months, or right away if you email us</li>
           <li>Practice recordings live only on your device; deleting them in the app, or deleting the app, removes them permanently</li>
-          <li>Device records (see <a href="https://www.trysheetly.com/privacy#security">Account security &amp; devices</a>) are deleted 90 days after a device was last seen, and with your account</li>
+          <li>Device records (see <a href="https://www.trysheetly.com/privacy#security">Account security &amp; devices</a>) are deleted 90 days after a device was last seen, and at once when you delete your account</li>
           <li>Delete your account in the app's Settings, or email <a href="mailto:hello@trysheetly.com">hello@trysheetly.com</a> from the address you signed up with. Deleting in the app erases your account and scores at once. Email us too if you want your scan photos gone right away; otherwise they are deleted automatically within 12 months. When you email us, we erase everything within 30 days, scan photos and test-set copies included. Feedback you sent is kept without your name or account</li>
         </ul>
       </section>
