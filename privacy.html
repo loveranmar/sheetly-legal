@@ -61,7 +61,7 @@ footer a{margin-right:14px}
 
       <div class="note">
         <div class="note-title">What changed on November 26, 2026</div>
-        <p>Scans now run on servers at Modal, and the AI that reads each page and the Ask Sheetly coach are now Claude, made by Anthropic. Neither of them uses your scans or messages to train AI models. To protect accounts and keep each one to its owner, the app now also checks which devices use your account and, roughly, which country they are in. It never uses GPS. See <a href="https://www.trysheetly.com/privacy#music">How scans are processed</a>, <a href="https://www.trysheetly.com/privacy#coach">Ask Sheetly</a> and <a href="https://www.trysheetly.com/privacy#security">Account security &amp; devices</a>.</p>
+        <p>Scans now run on servers at Modal, and the AI that reads each page and the Ask Sheetly coach are now Claude, made by Anthropic. Neither of them uses your scans or messages to train AI models. To protect accounts and keep each one to its owner, the app now also checks which devices use your account and, roughly, which country they are in. It never uses GPS. See <a href="https://www.trysheetly.com/privacy#processing">How scans are processed</a>, <a href="https://www.trysheetly.com/privacy#coach">Ask Sheetly</a> and <a href="https://www.trysheetly.com/privacy#security">Account security &amp; devices</a>.</p>
       </div>
 
       <section id="applies">
@@ -91,7 +91,7 @@ footer a{margin-right:14px}
         </ul>
         <p>We keep each scan photo for up to 12 months, so that when a scan goes wrong we can see what was photographed and fix it. Scan photos are used only to make your score and to test and improve the scanner, as described under <a href="https://www.trysheetly.com/privacy#improving">Improving the scanner</a>. They are never used for advertising, never sold, and never shared with data brokers.</p>
 
-        <h3>How scans are processed</h3>
+        <h3 id="processing">How scans are processed</h3>
         <p>When you scan a page, the image is sent over an encrypted connection to our scan servers, which run at Modal, where our music-recognition pipeline converts it into a digital score. Modal only runs that work for us: once the scan is done, the photo is deleted from those servers. While the notes are read, a copy of the page is sent to Claude, an AI model made by Anthropic, which reads things like the title, the instrument, the tempo and the time signature. Anthropic does not use it to train its models. The scan photo itself is then kept in our private storage on Google Cloud, as described above.</p>
         <p>If our main scan servers are ever down, a scan can be handled by our backup scan servers on Google Cloud instead, where a Google AI model reads the page in the same way. The output belongs to you and appears in your library.</p>
       </section>
@@ -155,7 +155,8 @@ footer a{margin-right:14px}
           <li><strong>When the device was first and last seen,</strong> and on which days it was used in which country</li>
         </ul>
         <p>We use this only to keep your account safe and in your hands: to notice when a new device in another country signs in, or when your account is in use in two countries on the same day, and then email you a short code so you can confirm it was you. You decide. If it wasn't you, one tap on "That wasn't me" in that email signs the device out, and if you sign in with a password, we send you a link to choose a new one. We also use it to limit how many devices can use one account at the same time, as the <a href="https://www.trysheetly.com/terms#account">Terms of Use</a> describe. Your own library, your scores and your recordings always stay yours.</p>
-        <p>Device records are deleted 90 days after a device was last seen. They are never used for advertising and never sold. The confirmation email is sent through Resend, and if one account trips this check again and again on the same day, a short alert with that account's email address and countries is posted to our private Discord channel so we can look into it. Under GDPR this is our legitimate interest in keeping accounts secure and preventing fraud (article 6(1)(f)), and part of providing the service on the terms you signed up for (article 6(1)(b)).</p>
+        <p>These checks run automatically. If one ever gets in your way, for example when you travel, email us and a person will look at it.</p>
+        <p>Device records are deleted 90 days after a device was last seen. They are never used for advertising and never sold. The confirmation email is sent through Resend, and if one account trips this check again and again on the same day, a short alert with that account's email address, its countries and the device model is posted to our private Discord channel so we can look into it. Under GDPR this is our legitimate interest in keeping accounts secure and preventing fraud (article 6(1)(f)), and part of providing the service on the terms you signed up for (article 6(1)(b)).</p>
       </section>
 
       <section id="third-parties">
@@ -226,7 +227,7 @@ footer a{margin-right:14px}
         <h2>Your rights under GDPR</h2>
         <p>If you are in the European Economic Area (including Sweden), the United Kingdom, or another region with similar privacy laws, you have the right to:</p>
         <ul class="list-yes">
-          <li>Ask for a copy of the information we hold about you</li>
+          <li>Ask for a copy of the information we hold about you, in a format you can take to another service</li>
           <li>Ask for it to be corrected or deleted</li>
           <li>Object to or restrict how we process it</li>
           <li>Withdraw consent at any time, for example by revoking camera or microphone permissions, or deleting your account</li>
